@@ -17,9 +17,6 @@
 #******************************************************************************
 
 LDLIBS = -lbluetooth
-# CFLAGS=-g
-
-CFLAGS=
 
 all : brcm_patchram_plus brcm_patchram_plus_h5 brcm_patchram_plus_usb \
 	brcm_patchram_plus.1.gz
@@ -32,4 +29,8 @@ brcm_patchram_plus_usb : brcm_patchram_plus_usb.o
 
 brcm_patchram_plus.1.gz : brcm_patchram_plus.1
 	gzip -9 $^
+
+clean:
+	rm -rf *.o
+	rm -rf *.
 

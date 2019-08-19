@@ -56,6 +56,7 @@
 #include <fcntl.h>
 
 #include <stdlib.h>
+#include <unistd.h>
 
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/hci.h>
